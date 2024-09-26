@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Color Contrast Checker",
+  "version": "1.0",
+  "description": "Extracts colors from the website and checks for color contrast",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}

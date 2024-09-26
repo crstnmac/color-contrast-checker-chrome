@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Color Contrast Checker</title>
+  <style>
+    body {
+      width: 400px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+
+    #results {
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    .contrast-pair {
+      margin-bottom: 10px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    .contrast-pair:hover {
+      background-color: #f0f0f0;
+    }
+
+    .color-sample {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+
+    .status-indicator {
+      margin-left: 5px;
+    }
+
+    .instructions {
+      margin-bottom: 10px;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Color Contrast Results</h1>
+  <p class="instructions">Results show only visible elements. Click on a result to highlight matching elements on the
+    page for 5 seconds.</p>
+  <div id="results"></div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
